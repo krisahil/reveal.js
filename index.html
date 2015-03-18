@@ -147,18 +147,13 @@
         </section>
 
         <section>
-          <h2>Panels suite</h2>
-          <p>Comprehensive suite to manage blocks across all regions.</p>
-          <p class="fragment">Simplify...</p>
-          <p class="fragment">Requires uber-important Chaos tool suite module.</p>
-        </section>
-
-        <section>
           <h2>What is Panels?</h2>
+          <p>Comprehensive suite to manage blocks across all regions.</p>
+          <p class="fragment">Simplify your life with one toolset.<p>
           <ul>
-            <li>Drag-and-drop interface to place blocks.</li>
-            <li>Layouts: Avoid CSS for basic layouts!</li>
-            <li>Contexts: Blocks are always aware of what's available.</li>
+            <li class="fragment">Drag-and-drop interface to place blocks.</li>
+            <li class="fragment">Layouts: Avoid CSS for basic layouts!</li>
+            <li class="fragment">Contexts: Blocks are always aware of what's available.</li>
           </ul>
         </section>
 
@@ -172,6 +167,90 @@
             <li><strike>Panel nodes</strike></li>
             <li>Panels everywhere</li>
           </ul>
+          <p class="fragment">Layouts!</p>
+          <aside class="notes">
+            <p>We'll discuss in order logical to site-builder, not programmer.</p>
+          </aside>
+        </section>
+
+        <section>
+          <section>
+            <h2>Prereq 1: Layouts</h2>
+            <img style="float:right; width: 700px" alt="Page manager page with arguments example" src="lib/image/custom/example_panels_layout.png" />
+            <ul style="display:block;">
+              <li class="fragment">Plugin method: Declares the regions, template, and CSS.</li>
+              <li class="fragment">Can be stored in theme or modules.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Prereq 2: Contexts</h2>
+            <ul>
+              <li class="fragment">What type of data is available on this page?</li>
+              <li class="fragment">Only appropriate blocks are available for use.</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Page manager</h2>
+            <img style="float:right; width: 700px" alt="Page manager page with arguments example" src="lib/image/custom/example_page_manager.png" />
+            <p class="fragment">Replacement (mostly) for hook_menu() for custom pages.</p>
+            <p class="fragment">Arguments in URL become contexts (e.g. node ID becomes full node).</p>
+          </section>
+          <section>
+            <h2>Page manager: Variants</h2>
+            <img style="float:right; width: 700px" alt="Page manager variants example" src="lib/image/custom/example_page_manager_variants.png" />
+            <p class="fragment">Selection rules determine which variant gets used.</p>
+            <p class="fragment">Don't get too crazy with the rules.</p>
+          </section>
+        </section>
+
+        <section>
+          <h2>Mini panels</h2>
+          <img style="float:right; width: 700px" alt="Mini panel example in header" src="lib/image/custom/example_mini_panel_in_header.png" />
+          <p class="fragment">Group blocks together as Panels layouts.</p>
+          <p class="fragment">Can be used as blocks throughout site.</p>
+        </section>
+
+        <section>
+          <section>
+            <h2>Panelizer</h2>
+            <p>More checkboxes than you can shake a stick at!</p>
+            <p class="fragment">Read tutorials before starting!</p>
+            <p class="fragment">Remember, with great power comes... <span class="fragment"><em>great</em> complexity.</span></p>
+          </section>
+          <section>
+            <h2>Panelizer: Why so great?</h2>
+            <ul>
+              <li class="fragment">Allows editors to choose a template per node.</li>
+              <li class="fragment">Customize the Panel for one specific node. Powerful, and dangerous!</li>
+              <li class="fragment">And both of these for each view mode for each node!</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Panelizer: So many choices!</h2>
+            <img alt="Screenshot of Panelizer choices on a node edit form" src="lib/image/custom/example_panelizer_choices.png" />
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Panels is greedy.</h2>
+            <img class="fragment" src="http://cdn.meme.am/instances/500x/60375909.jpg" />
+          </section>
+          <section>
+            <h2>Panelizer: Why so great?</h2>
+            <ul>
+              <li class="fragment">Allows editors to choose a template per node.</li>
+              <li class="fragment">Customize the Panel for one specific node. Powerful, and dangerous!</li>
+              <li class="fragment">And both of these for each view mode for each node!</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Panelizer: So many choices!</h2>
+            <img alt="Screenshot of Panelizer choices on a node edit form" src="lib/image/custom/example_panelizer_choices.png" />
+          </section>
         </section>
 
         <!-- Example of nested vertical slides -->
