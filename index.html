@@ -59,7 +59,7 @@
         </section>
 
         <section>
-          <div style="float:right;"><img alt="Picture of Chris Hill" src="http://2015.midcamp.org/sites/default/files/styles/large/public/users/326790_613403508929_337476708_o.jpg?itok=Z8iqi626" /></div>
+          <div style="float:right;"><img alt="Picture of Chris Hill" src="lib/image/custom/chrishill_profile.jpg" /></div>
           <h1>Chris Hill</h1>
           <h3>krisahil (drupal.org)</h3>
           <h3>Bonnier Corporation</h3>
@@ -69,7 +69,7 @@
 
         <section>
           <p>Not the Drupal-famous "Chris Hill" of Weather.com fame.</p>
-          <img alt="Weather Channel logo" src="http://p1cdn02.thewrap.com/images/2014/11/Weather-Channel.jpg" />
+          <img alt="Weather Channel logo" src="lib/image/custom/twc_lightning.jpg" />
           <aside class="notes">
             <p>
             Former colleagues worked closely with him and say he is an incredible technical talent and leader.
@@ -82,7 +82,7 @@
           <p class="fragment"> and bad. :-(</p>
           <div class="fragment">
             <p>Best practices is about learning from those who have succeeded.</p>
-            <img alt="'Do it right the first time' meme" src="http://cdn.meme.am/instances/500x/54876426.jpg" />
+            <img alt="'Do it right the first time' meme" src="lib/image/custom/office_space_meme_first_time.jpg" />
           </div>
         </section>
 
@@ -96,8 +96,8 @@
         </section>
 
         <section>
-          <h1>Who here's perfect?</h1>
-          <p class="fragment">We've all "architectred" solutions we're not proud of.</p>
+          <h1>Who here is perfect?</h1>
+          <p class="fragment">We've all "architected" solutions we're not proud of.</p>
           <ul>
             <li class="fragment">Printed HTML in page TPL?</li>
             <li class="fragment">Programmatically rendered a block in a node's body?</li>
@@ -118,14 +118,14 @@
 
         <section>
           <h2>Page layout</h2>
-          <img style="float:right;" alt="HTML page layout example" src="http://www.onlywebpro.com/wp-content/uploads/2013/09/html5_layout1.jpg" />
+          <img style="float:right;" alt="HTML page layout example" src="lib/image/custom/html5_layout1.jpg" />
           <ul>
             <li>Header</li>
             <li>Content</li>
             <li>Sidebar</li>
             <li>Footer</li>
           </ul>
-          <p>How to place blocks into those regions?</p>
+          <p>Big question: <span class="fragment">How to place blocks into those regions?</span></p>
         </section>
 
         <section>
@@ -167,7 +167,6 @@
             <li><strike>Panel nodes</strike></li>
             <li>Panels everywhere</li>
           </ul>
-          <p class="fragment">Layouts!</p>
           <aside class="notes">
             <p>We'll discuss in order logical to site-builder, not programmer.</p>
           </aside>
@@ -177,6 +176,14 @@
           <section>
             <h2>Prereq 1: Layouts</h2>
             <img style="float:right; width: 700px" alt="Page manager page with arguments example" src="lib/image/custom/example_panels_layout.png" />
+            <ul style="display:block;">
+              <li class="fragment">Each section is a "region".</li>
+              <li class="fragment">The "blocks" can be regular blocks, Views, menus, etc.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Layouts provided</h2>
+            <img alt="Panels layouts out-of-the-box example" src="lib/image/custom/panels_layouts.png" />
             <ul style="display:block;">
               <li class="fragment">Plugin method: Declares the regions, template, and CSS.</li>
               <li class="fragment">Can be stored in theme or modules.</li>
@@ -201,8 +208,10 @@
           <section>
             <h2>Page manager: Variants</h2>
             <img style="float:right; width: 700px" alt="Page manager variants example" src="lib/image/custom/example_page_manager_variants.png" />
-            <p class="fragment">Selection rules determine which variant gets used.</p>
-            <p class="fragment">Don't get too crazy with the rules.</p>
+            <ul>
+              <li class="fragment">Selection rules determine which variant gets used.</li>
+              <li class="fragment">Don't get too crazy with the rules.</li>
+            </ul>
           </section>
         </section>
 
@@ -223,9 +232,9 @@
           <section>
             <h2>Panelizer: Why so great?</h2>
             <ul>
-              <li class="fragment">Allows editors to choose a template per node.</li>
+              <li class="fragment">Allows editors to choose a Panels template per node.</li>
               <li class="fragment">Customize the Panel for one specific node. Powerful, and dangerous!</li>
-              <li class="fragment">And both of these for each view mode for each node!</li>
+              <li class="fragment">And <em>both</em> of these for each view mode for each node!</li>
             </ul>
           </section>
           <section>
@@ -237,337 +246,55 @@
         <section>
           <section>
             <h2>Panels is greedy.</h2>
-            <img class="fragment" src="lib/image/custom/60375909.jpg" />
+            <img class="fragment" alt="Panels Everywhere meme" src="lib/image/custom/60375909.jpg" />
           </section>
           <section>
-            <h2>Panelizer: Why so great?</h2>
+            <h2>What is Panels Everywhere?</h2>
             <ul>
-              <li class="fragment">Allows editors to choose a template per node.</li>
-              <li class="fragment">Customize the Panel for one specific node. Powerful, and dangerous!</li>
-              <li class="fragment">And both of these for each view mode for each node!</li>
+              <li class="fragment">Frees you from core's blocks and regions.</li>
+              <li class="fragment">Control the header, sidebars, and footer in Panels interface.</li>
+              <li class="fragment">Variants allow easy switching of page layout and blocks.</li>
             </ul>
           </section>
           <section>
-            <h2>Panelizer: So many choices!</h2>
-            <img alt="Screenshot of Panelizer choices on a node edit form" src="lib/image/custom/example_panelizer_choices.png" />
-          </section>
-        </section>
-
-        <!-- Example of nested vertical slides -->
-        <section>
-          <section>
-            <h2>Vertical Slides</h2>
-            <p>Slides can be nested inside of each other.</p>
-            <p>Use the <em>Space</em> key to navigate through all slides.</p>
-            <br>
-            <a href="#" class="navigate-down">
-              <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-            </a>
-          </section>
-          <section>
-            <h2>Basement Level 1</h2>
-            <p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-          </section>
-          <section>
-            <h2>Basement Level 2</h2>
-            <p>That's it, time to go back up.</p>
-            <br>
-            <a href="#/2">
-              <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-            </a>
+            <h2>How to use?</h2>
+            <ul>
+              <li class="fragment">Use a supported theme.</li>
+              <li class="fragment">Try to use from start of project.</li>
+              <li class="fragment">Variants allow easy switching of page layout and blocks.</li>
+            </ul>
+            <img class="fragment" alt="Screenshot of Panelizer choices on a node edit form" src="lib/image/custom/panels_everywhere_display.png" />
           </section>
         </section>
 
         <section>
-          <h2>Slides</h2>
-          <p>
-            Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-          </p>
-        </section>
-
-        <section>
-          <h2>Point of View</h2>
-          <p>
-            Press <strong>ESC</strong> to enter the slide overview.
-          </p>
-          <p>
-            Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-          </p>
-        </section>
-
-        <section>
-          <h2>Touch Optimized</h2>
-          <p>
-            Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-          </p>
-        </section>
-
-        <section data-markdown>
-          <script type="text/template">
-            ## Markdown support
-
-            Write content using inline or external Markdown.
-            Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-            ```
-            <section data-markdown>
-              ## Markdown support
-
-              Write content using inline or external Markdown.
-              Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-            </section>
-            ```
-          </script>
-        </section>
-
-        <section>
-          <section id="fragments">
-            <h2>Fragments</h2>
-            <p>Hit the next arrow...</p>
-            <p class="fragment">... to step through ...</p>
-            <p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-            <aside class="notes">
-              This slide has fragments which are also stepped through in the notes window.
-            </aside>
-          </section>
-          <section>
-            <h2>Fragment Styles</h2>
-            <p>There's different types of fragments, like:</p>
-            <p class="fragment grow">grow</p>
-            <p class="fragment shrink">shrink</p>
-            <p class="fragment roll-in">roll-in</p>
-            <p class="fragment fade-out">fade-out</p>
-            <p class="fragment current-visible">current-visible</p>
-            <p class="fragment highlight-red">highlight-red</p>
-            <p class="fragment highlight-blue">highlight-blue</p>
-          </section>
-        </section>
-
-        <section id="transitions">
-          <h2>Transition Styles</h2>
-          <p>
-            You can select from different transitions, like: <br>
-            <a href="?transition=none#/transitions">None</a> -
-            <a href="?transition=fade#/transitions">Fade</a> -
-            <a href="?transition=slide#/transitions">Slide</a> -
-            <a href="?transition=convex#/transitions">Convex</a> -
-            <a href="?transition=concave#/transitions">Concave</a> -
-            <a href="?transition=zoom#/transitions">Zoom</a>
-          </p>
-        </section>
-
-        <section id="themes">
-          <h2>Themes</h2>
-          <p>
-            reveal.js comes with a few themes built in: <br>
-            <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-            <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-          </p>
-        </section>
-
-        <section>
-          <section data-background="#dddddd">
-            <h2>Slide Backgrounds</h2>
-            <p>
-              Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-            </p>
-            <a href="#" class="navigate-down">
-              <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-            </a>
-          </section>
-          <section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-            <h2>Image Backgrounds</h2>
-            <pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-          </section>
-          <section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-            <h2>Tiled Backgrounds</h2>
-            <pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-          </section>
-          <section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-            <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-              <h2>Video Backgrounds</h2>
-              <pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-            </div>
-          </section>
-        </section>
-
-        <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-          <h2>Background Transitions</h2>
-          <p>
-            Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-          </p>
-          <pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-        </section>
-
-        <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-          <h2>Background Transitions</h2>
-          <p>
-            You can override background transitions per-slide.
-          </p>
-          <pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-        </section>
-
-        <section>
-          <h2>Pretty Code</h2>
-          <pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-          </code></pre>
-          <p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-        </section>
-
-        <section>
-          <h2>Marvelous List</h2>
+          <h2>Next steps</h2>
+          <p>Great modules to extend Panels:</p>
           <ul>
-            <li>No order here</li>
-            <li>Or here</li>
-            <li>Or here</li>
-            <li>Or here</li>
+            <li class="fragment"><a href="https://www.drupal.org/project/fieldable_panels_panes">Fieldable panel panes</a></li>
+            <li class="fragment"><a href="https://www.drupal.org/project/classy_panel_styles">Classy Panel Styles</a></li>
           </ul>
         </section>
 
         <section>
-          <h2>Fantastic Ordered List</h2>
-          <ol>
-            <li>One is smaller than...</li>
-            <li>Two is smaller than...</li>
-            <li>Three!</li>
-          </ol>
-        </section>
-
-        <section>
-          <h2>Tabular Tables</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th>Value</th>
-                <th>Quantity</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Apples</td>
-                <td>$1</td>
-                <td>7</td>
-              <tr>
-              <tr>
-                <td>Lemonade</td>
-                <td>$2</td>
-                <td>18</td>
-              <tr>
-              <tr>
-                <td>Bread</td>
-                <td>$3</td>
-                <td>2</td>
-              <tr>
-            </tbody>
-          </table>
-        </section>
-
-        <section>
-          <h2>Clever Quotes</h2>
-          <p>
-            These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-            &ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-          </p>
-          <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-            &ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-            reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-          </blockquote>
-        </section>
-
-        <section>
-          <h2>Intergalactic Interconnections</h2>
-          <p>
-            You can link between slides internally,
-            <a href="#/2/3">like this</a>.
-          </p>
-        </section>
-
-        <section>
-          <h2>Speaker View</h2>
-          <p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-          <p>Press the <em>S</em> key to try it out.</p>
-
-          <aside class="notes">
-            Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-          </aside>
-        </section>
-
-        <section>
-          <h2>Export to PDF</h2>
-          <p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-          <iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-        </section>
-
-        <section>
-          <h2>Global State</h2>
-          <p>
-            Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-            will be added as a class to the document element when the slide is open. This lets you
-            apply broader style changes, like switching the page background.
-          </p>
-        </section>
-
-        <section data-state="customevent">
-          <h2>State Events</h2>
-          <p>
-            Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-          </p>
-          <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-  console.log( '"customevent" has fired' );
-} );
-          </code></pre>
-        </section>
-
-        <section>
-          <h2>Take a Moment</h2>
-          <p>
-            Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-          </p>
-        </section>
-
-        <section>
-          <h2>Much more</h2>
+          <h2>Closing</h2>
           <ul>
-            <li>Right-to-left support</li>
-            <li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-            <li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-            <li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-            <li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+            <li class="fragment">Is Panels ecosystem perfect?</li>
+            <li class="fragment">Mature project, with lots of supporting themes and modules.</li>
+            <li class="fragment">Will tomorrow's you be happy?</li>
           </ul>
         </section>
 
-        <section style="text-align: left;">
-          <h1>THE END</h1>
-          <p>
-            - <a href="http://slides.com">Try the online editor</a> <br>
-            - <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-          </p>
+        <section>
+          <h2>Thank you!</h2>
+          <h4>Questions?</h4>
+          <div class="fragment">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="http://nodeone.se/en/learn-page-manager">High-quality teaching by Johan Falk: http://nodeone.se/en/learn-page-manager</a></li>
+              <li><a href="https://drupalize.me/videos/introduction-building-websites-using-panels-module">Drupalize.me training: https://drupalize.me/videos/introduction-building-websites-using-panels-module</a></li>
+            </ul>
+          </div>
         </section>
 
       </div>
