@@ -1,0 +1,3 @@
+[submodule "inc/panels"]
+	path = inc/panels
+	url = git@github.com:krisahil/reveal.js.git
